@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: cornsilk;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+    
+.title{
+    margin: 0;
+}
+
+.subtitle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header {
+    background-color: #5543f7;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+.header input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.header input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.user-list {
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.user-list li {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.user-list li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.user-list .user-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.user-list .user-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-list .user-info p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-list li.hide {
+    display: none;
+}
